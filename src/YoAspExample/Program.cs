@@ -18,10 +18,11 @@ namespace YoAspExample
                 .Build();
 
             var host = new WebHostBuilder()
-                .UseConfiguration(config)
                 .UseKestrel()
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseIISIntegration()
+                .UseConfiguration(config)
+               
+                //.UseContentRoot(Directory.GetCurrentDirectory())
+                //.UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
 
