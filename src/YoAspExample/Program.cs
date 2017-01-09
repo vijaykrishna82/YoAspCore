@@ -14,7 +14,7 @@ namespace YoAspExample
         {
            var config = new ConfigurationBuilder()
                 .AddCommandLine(args)
-                .AddEnvironmentVariables(prefix: "ASPNETCORE_")
+               // .AddEnvironmentVariables(prefix: "ASPNETCORE_")
                 .Build();
 
             var host = new WebHostBuilder()
